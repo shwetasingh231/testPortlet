@@ -1,2 +1,2 @@
 # testPortlet
-![Alt text](icon.png "Optional title")
+![Alt text](img/icon.png "Optional title")
