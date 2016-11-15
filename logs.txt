@@ -1,0 +1,69 @@
+
+### Access logs ######
+127.0.0.1 - - [14/Sep/2016:13:37:02 +0000] "GET /web/guest/home?p_p_id=58&p_p_state=maximized&p_p_col_id=column-1&p_p_col_count=1&_58_struts_action=%2Flogin%2Fcreate_account&reset_business_address=Y HTTP/1.1" 302 -
+127.0.0.1 - - [14/Sep/2016:13:37:02 +0000] "GET / HTTP/1.1" 200 4952
+127.0.0.1 - - [14/Sep/2016:13:37:02 +0000] "GET /html/js/barebone.jsp?browserId=ie&themeId=cbpd_WAR_cbpdtheme&colorSchemeId=01&minifierType=js&minifierBundleId=javascript.barebone.files&languageId=en_US&b=6110&t=1473860091446 HTTP/1.1" 200 105825
+127.0.0.1 - - [14/Sep/2016:13:37:03 +0000] "GET /cbpd-theme/images/cbpd_logo/cbpd_footer.png HTTP/1.1" 304 -
+
+
+#### Catalina logs#######
+14-Sep-2016 13:34:41 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\cbpd-tabs-hook
+14-Sep-2016 13:34:42 org.apache.catalina.startup.TldConfig tldScanWebXml
+WARNING: Failed to process TLD with path [http://java.sun.com/portlet_2_0] and URI [/WEB-INF/tld/liferay-portlet.tld]
+java.net.MalformedURLException
+	at java.net.URL.<init>(URL.java:601)
+	at java.net.URL.<init>(URL.java:464)
+	at java.net.URL.<init>(URL.java:413)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:186)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:772)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1537)
+	at org.apache.catalina.startup.TldConfig.tldScanStream(TldConfig.java:515)
+	at org.apache.catalina.startup.TldConfig.tldScanWebXml(TldConfig.java:328)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:243)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:540)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5161)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:897)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:873)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1095)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1617)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+14-Sep-2016 13:34:42 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\cbpd-theme
+14-Sep-2016 13:34:46 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\cbpd2-buy-bags
+14-Sep-2016 13:34:49 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\cbpd_login-hook
+14-Sep-2016 13:34:51 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\collection-schedule
+14-Sep-2016 13:34:55 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\lot4-admin-portlet
+14-Sep-2016 13:34:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\lot4-user-portlet
+14-Sep-2016 13:35:03 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\track-and-trace-1.0-SNAPSHOT
+14-Sep-2016 13:35:06 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\shweta\Business_Portal\Liferay_instance_for_BP\liferay-portal-6.1.10-ee-ga1\tomcat-7.0.25\webapps\ViewStatus-portlet
+14-Sep-2016 13:35:10 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+14-Sep-2016 13:35:10 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8109"]
+14-Sep-2016 13:35:10 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 145015 ms
+
+
+
